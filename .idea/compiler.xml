@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="loadbalancer" />
         <module name="eureka-server" />
         <module name="patients" />
-        <module name="loadbalancer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="balancer" target="11" />
       <module name="eureka-server" target="11" />
       <module name="EurekaServer" target="11" />
       <module name="loadbalancer" target="11" />
@@ -22,6 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EurekaServer" options="-parameters" />
+      <module name="balancer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="loadbalancer" options="-parameters" />
       <module name="patients" options="-parameters" />
