@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="patients" />
+        <module name="loadbalancer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="11" />
       <module name="EurekaServer" target="11" />
+      <module name="loadbalancer" target="11" />
       <module name="patients" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EurekaServer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="loadbalancer" options="-parameters" />
       <module name="patients" options="-parameters" />
     </option>
   </component>
